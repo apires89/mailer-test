@@ -17,6 +17,13 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 
+##LETTER OPENER####
+
+gem "letter_opener", group: :development
+gem 'postmark-rails'
+gem 'gibbon'
+
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end

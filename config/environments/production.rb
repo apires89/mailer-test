@@ -1,6 +1,9 @@
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: "http://TODO_PUT_YOUR_DOMAIN_HERE" }
+  #config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: "yourapp.herokuapp.com" }
   # Verifies that versions and hashed value of the package contents in the project's package.json
+  config.action_mailer.delivery_method = :postmark
+  config.action_mailer.postmark_settings = { :api_token => "fab41294-dad6-4d74-95ec-8eb96ed7c3be" }
   config.webpacker.check_yarn_integrity = false
   # Settings specified here will take precedence over those in config/application.rb.
 
